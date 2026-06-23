@@ -1,0 +1,15 @@
+C:\Users\GF\Documents\Abdellateef\bin\Debug\net6.0\Abdellateef.exe
+C:\Users\GF\Documents\Abdellateef\bin\Debug\net6.0\Abdellateef.deps.json
+C:\Users\GF\Documents\Abdellateef\bin\Debug\net6.0\Abdellateef.runtimeconfig.json
+C:\Users\GF\Documents\Abdellateef\bin\Debug\net6.0\Abdellateef.dll
+C:\Users\GF\Documents\Abdellateef\bin\Debug\net6.0\Abdellateef.pdb
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.csproj.AssemblyReference.cache
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.AssemblyInfoInputs.cache
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.AssemblyInfo.cs
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.csproj.CoreCompileInputs.cache
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.dll
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\refint\Abdellateef.dll
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.pdb
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\Abdellateef.genruntimeconfig.cache
+C:\Users\GF\Documents\Abdellateef\obj\Debug\net6.0\ref\Abdellateef.dll

@@ -12,41 +12,51 @@ class Program
         //int age = int.parse(console.readline());
         //console.writeline($"welcome {name}, your specialty is {specialty} and you are {age} years old.");
 
-        // 1. User Input
-        Console.Write("Enter Product Name: ");
-        string Name = Console.ReadLine();
+    
+        
+            Console.Write("Enter Product Name: ");
+            string Name = Console.ReadLine();
 
-        Console.Write("Enter Quantity: ");
-        int quan = int.Parse(Console.ReadLine());
+            Console.Write("Enter Quantity: ");
+            int quan = int.Parse(Console.ReadLine());
 
-        Console.Write("Enter Unit Price: $");
-        decimal unPrice = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Select Currency:");
+            Console.WriteLine("1. Dollar $");
+            Console.WriteLine("2. Shekel ₪");
+            Console.Write("Enter choice (1/2/3): ");
+            int currencyChoice = int.Parse(Console.ReadLine());
 
-        // 2. Business Logic
-        decimal totPrice = quan * unPrice;
-        decimal discount;
-        decimal netTot;
+            string currencySymbol;
+            switch (currencyChoice)
+            {
+                case 1: currencySymbol = "$"; break;
+                case 2: currencySymbol = "₪"; break;
+                default: currencySymbol = "$"; break;
+            }
 
-        // 3. if/else للخصم
-        if (totPrice > 100)
-        {
-            discount = totPrice * 0.10m;
+            Console.Write("Enter Unit Price: ");
+            decimal unPrice = decimal.Parse(Console.ReadLine());
+
+            decimal totPrice = quan * unPrice;
+            decimal discount;
+            decimal netTot;
+
+            if (totPrice > 100)
+            {
+                discount = totPrice * 0.10m;
+            }
+            else
+            {
+                discount = 0;
+            }
+
+            netTot = totPrice - discount;
+
+            Console.WriteLine($"Product    => {Name}");
+            Console.WriteLine($"Quantity   => {quan}");
+            Console.WriteLine($"Unit Price => {currencySymbol}{unPrice:F2}");
+            Console.WriteLine($"Total      => {currencySymbol}{totPrice:F2}");
+            Console.WriteLine($"Discount   => {currencySymbol}{discount:F2}");
+            Console.WriteLine($"Net Total  => {currencySymbol}{netTot:F2}");
         }
-        else
-        {
-            discount = 0;
-        }
-
-        netTot = totPrice - discount;
-
-        // 4. Output
-        Console.WriteLine($"اسم المنتج    => {Name}");
-        Console.WriteLine($"الكمية   => {quan}");
-        Console.WriteLine($"وحدة السعر => ${unPrice:F2}");
-        Console.WriteLine($"السعر الكلي      => ${totPrice:F2}");
-        Console.WriteLine($"الخصم   => ${discount:F2}");
-        Console.WriteLine($"السعر الجديد بعد الخصم  => ${netTot:F2}");
-    }
-}
-      
-
+    } 

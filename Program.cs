@@ -23,7 +23,7 @@ class Program
             Console.WriteLine("Select Currency:");
             Console.WriteLine("1. Dollar $");
             Console.WriteLine("2. Shekel ₪");
-            Console.Write("Enter choice (1/2/3): ");
+            Console.Write("Enter choice (1/2): ");
             int currencyChoice = int.Parse(Console.ReadLine());
 
             string currencySymbol;
